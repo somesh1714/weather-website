@@ -1,0 +1,51 @@
+body {
+  color: #333333;
+  font-family: Arial, Helvetica, sans-serif;
+  max-width: 650px;
+  margin: 0 auto;
+  padding: 0 16px;
+  margin-top: 6px;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+footer {
+  color: #888888;
+  margin-top: 8px;
+  border-top: 2px solid #eeeeee;
+  padding: 16px 0;
+}
+
+header {
+  margin-bottom: 48px;
+}
+
+header a {
+  text-decoration: none;
+  margin-right: 16px;
+}
+
+h1 {
+  font-size: 64px;
+}
+
+.potrait {
+  max-width: 250px;
+  max-height: 250px;
+}
+
+.main-content {
+  flex-grow: 1;
+}
+
+input {
+  border: 1px solid #cccccc;
+  padding: 8px;
+}
+
+button {
+  cursor: pointer;
+  border: 1px solid #cccccc;
+  padding: 8px;
+}
