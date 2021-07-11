@@ -33,15 +33,24 @@ weatherForm.addEventListener("submit", (e) => {
         messageOne.textContent = data.error;
       } else {
         messageOne.textContent = data.address;
+        // let weatherData =
+        //   "The weather in " +
+        //   data.forecastData.location.name +
+        //   " in the country " +
+        //   data.forecastData.location.country +
+        //   " is " +
+        //   data.forecastData.current.weather_descriptions +
+        //   " with wind speed " +
+        //   data.forecastData.current.wind_speed;
         let weatherData =
-          "The weather in " +
-          data.forecastData.location.name +
-          " in the country " +
-          data.forecastData.location.country +
-          " is " +
           data.forecastData.current.weather_descriptions +
-          " with wind speed " +
-          data.forecastData.current.wind_speed;
+          ". It is currently " +
+          data.forecastData.current.temperature +
+          " degrees out . It currently feels like " +
+          data.forecastData.current.feelslike +
+          "degrees out . The humidity is " +
+          data.forecastData.current.humidity +
+          "%.";
         messageTwo.textContent = weatherData;
       }
     });
